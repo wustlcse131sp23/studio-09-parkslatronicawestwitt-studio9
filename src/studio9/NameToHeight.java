@@ -20,8 +20,14 @@ public class NameToHeight {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 
-		// FIXME
-		throw new NotYetImplementedException();
-
+		Map<String, Integer> Heights = new HashMap<>();
+		Heights.put("Andy Parks", 71);
+		Heights.put("Abbi West", 59);
+		Heights.put("Matt Latronica", 22);
+		Heights.put("Sam Witt", 104);
+		System.out.println("give me a name: ");
+		String name = in.nextLine();
+		int x = Heights.get(name);
+		System.out.println(x);
 	}
 }
